@@ -1,0 +1,304 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: white;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.navBarBrand {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.menuItems {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuItems li {
+    margin-right: 20px;
+}
+
+.menuItems a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.homeContent {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    background-image: url(emile-perron-xrVDYZRGdw4-unsplash.jpg);
+    background-size: cover;
+}
+.mainContent{
+    padding: 20px;
+}
+section{
+    padding: 60px 20px;
+}
+section h2{
+    margin-top: 0;
+}
+
+.ProfileImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+    margin: auto;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.project {
+    min-width: 100%; /* Show one project at a time */
+    box-sizing: border-box;
+    padding: 20px; /* Optional: Add some padding */
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 24px;
+    z-index: 1000;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.projectImage {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.projectLink{
+    background-color:#e91e63;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.certification-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.certification-card {
+    background-color: #ff4081;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    width: calc(33.33% - 20px);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.certification-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.certificateImage{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.certificateLink {
+    background-color: #e91e63;
+    padding: 0px 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.certification-card:hover {
+    transform: scale(1.05);
+    background-color: #e91e63;
+}
+.acheivement-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.acheivement-card{
+    background-color: #ff4081;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    width: calc(33.33% - 20px);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.acheivement-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.AchievementImage{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.AchievementLink {
+    background-color: #e91e63;
+    padding: 0px 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.acheivement-card:hover {
+    transform: scale(1.05);
+    background-color: #e91e63;
+}
+.skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.skill {
+    background-color: #ff4081;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    flex: 0 1 calc(20%-20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.skill:hover{
+    transform: scale(1.05);
+    background-color: #e91e63;
+}
+
+#contact {
+    background-color: #444;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact-container p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.contact-container a {
+    color: #ff4081;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-container a:hover {
+    color: #e91e63;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-links li {
+    margin: 0 15px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #ff4081;
+    color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+@media (max-width: 768px) {
+    .skill {
+        flex: 0 1 calc(45% - 20px); /* Two items per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .skill {
+        flex: 0 1 100%; /* One item per row */
+    }
+}
